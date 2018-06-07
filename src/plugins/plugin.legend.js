@@ -95,6 +95,12 @@ module.exports = function(Chart) {
 			fontSize * Math.SQRT2 :
 			labelOpts.boxWidth;
 	}
+	
+	function getBoxHeight(labelOpts, fontSize) {
+		return labelOpts.boxHeight ?
+			labelOpts.boxHeight :
+			fontSize;
+	}
 
 	function getBoxHeight(labelOpts, fontSize) {
 		return labelOpts.boxHeight ?
